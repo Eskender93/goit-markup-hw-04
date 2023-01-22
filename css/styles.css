@@ -88,8 +88,7 @@ address {
 /* HEADER */
 
 .header {
-  background-color: #ffffff;
-  border-bottom: 3px solid #ffffff;
+  border-bottom: 1px solid #e7e9fc;
 }
 .header-nav {
   display: flex;
@@ -348,6 +347,9 @@ address {
   align-items: center;
   justify-content: center;
 }
+.team-soc-icon {
+  fill: #f4f4fd;
+}
 
 .team-subtitle {
   font-weight: 500;
@@ -399,7 +401,7 @@ address {
 }
 
 .customer-icon {
-  fill: #8E8F99;
+  fill: #8e8f99;
 }
 
 .customer-link:is(:hover, :focus) {
@@ -481,8 +483,6 @@ address {
   padding-top: 96px;
   padding-bottom: 120px;
 }
-.header-portfolio {
-}
 
 .portfolio-btn-list {
   display: flex;
@@ -531,6 +531,33 @@ address {
   column-gap: 24px;
   justify-content: center;
 }
+.portfolio-list-img-wrap {
+  position: relative;
+  display: block;
+  overflow-y: hidden;
+}
+
+.portfolio-list-img-wrap:hover .overlay {
+  transform: translate(0, 0);
+  transition: 500ms;
+}
+
+.overlay {
+  font-style: 14px;
+  background-color: #4d5ae5;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: rgba(244, 244, 253, 1);
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  transform: translate(0, 100%);
+}
 
 .portfolio-box-container {
   padding-top: 32px;
@@ -542,6 +569,7 @@ address {
   background: #ffffff;
   border: 0.5px solid #f4f4fd;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+  position: relative;
 }
 .portfolio-img {
 }
