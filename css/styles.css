@@ -21,6 +21,10 @@ ul {
   margin: 0;
   padding-left: 0;
 }
+
+li {
+  margin-right: 0;
+}
 button {
   cursor: pointer;
 }
@@ -37,7 +41,7 @@ address {
   text-decoration: none;
 }
 .container {
-  width: 1158px;
+  width: 1152px;
   padding-left: 12px;
   padding-right: 12px;
   margin-left: auto;
@@ -228,9 +232,11 @@ address {
 
 .strenth-list {
   display: flex;
+  justify-content: center;
   gap: 24px;
 }
 .strenth-item {
+  width: 264px;
 }
 .strenth-subtitle {
   font-weight: 500;
@@ -247,7 +253,6 @@ address {
   margin-bottom: 8px;
 }
 .strenth-link {
-  width: 264px;
   height: 112px;
   border-radius: 4px;
   background: #f4f4fd;
@@ -276,12 +281,11 @@ address {
 .products-list {
   display: flex;
   gap: 24px;
-  justify-content: space-between;
+  justify-content: center;
 }
+
 .product-item {
-  width: calc((100%-48px) / 3);
-}
-.product-img {
+  margin-right: 0;
 }
 
 /* TEAM */
@@ -344,6 +348,11 @@ address {
   align-items: center;
   justify-content: center;
 }
+
+.team-soc-link:is(:hover, :focus) {
+  background: var(--hover-color);
+}
+
 .team-soc-icon {
   fill: #f4f4fd;
 }
