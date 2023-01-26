@@ -653,13 +653,13 @@ address {
 }
 
 .title-form {
-  width: 100%;
   font-weight: 600;
   font-size: 16px;
   line-height: calc(24px / 16px);
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .contact-form-input {
@@ -708,8 +708,6 @@ address {
 .contact-form-btn {
   width: 170px;
   height: 51px;
-  left: 635px;
-  top: 584px;
   background-color: #4d5ae5;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -720,6 +718,8 @@ address {
   letter-spacing: 0.04em;
   color: #ffffff;
   margin-top: 24px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .contact-form-title {
