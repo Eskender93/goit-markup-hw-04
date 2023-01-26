@@ -55,7 +55,9 @@
           Effective Solutions <br />
           for Your Business
         </h1>
-        <button class="hero-btn" type="button">Order Service</button>
+        <button class="hero-btn" type="button" data-modal-open>
+          Order Service
+        </button>
       </div>
     </section>
     <!-- STRENGTH -->
@@ -247,7 +249,7 @@
         </ul>
       </div>
     </section>
-
+    <!-- CUSTOMERS -->
     <section class="customers">
       <div class="container">
         <h2 class="customers-title">Customers</h2>
@@ -322,6 +324,58 @@
       </div>
     </div>
   </footer>
+  <!-- BACKDROP -->
+  <div class="backdrop" data-modal>
+    <div class="modal">
+      <p class="title-for">Leave your contacts and we will call you back</p>
+      <form class="contact-form">
+        <label class="contact-form-title">
+          Name
+          <div class="contact-form-input-wrap">
+            <input type="text" class="contact-form-input" name="user_name" required minlength="2"
+              pattern="^[a-zA-Zа-яА-ЯіІїЇ]+$" />
+            <svg class="form-input-icon" width="18" height="24">
+              <use href="./images/sprite.svg#name-icon"></use>
+            </svg>
+          </div>
+        </label>
+        <label class="contact-form-title">
+          Phone
+          <div class="contact-form-input-wrap">
+            <input type="tel" class="contact-form-input" name="user_phone" required minlength="2"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx" />
+            <svg class="form-input-icon" width="18" height="24">
+              <use href="./images/sprite.svg#phone-icon"></use>
+            </svg>
+          </div>
+        </label>
+        <label class="contact-form-title">
+          Email
+          <div class="contact-form-input-wrap">
+            <input type="email" class="contact-form-input" name="user_email" required minlength="2" />
+            <svg class="form-input-icon" width="18" height="24">
+              <use href="./images/sprite.svg#email-icon"></use>
+            </svg>
+          </div>
+        </label>
+        <label class="contact-form-title">Comment
+          <textarea name="user-message" id="" cols="" rows="" class="contac-form-message"
+            placeholder="Text input"></textarea>
+        </label>
+          <input id="user_policy" type="checkbox" name="usr_policy" class="term-form-input visually-hidden" required />
+          <label for="user_policy" class="terms-and-conditions">I accept the terms and conditions of the&nbsp;
+            <a href="" class="privacy-policy link">Privacy Policy</a></label>
+        </label>
+          <button type="submit" class="contact-form-btn">Send</button>
+      </form>
+      <button type="button" class="modal-close-btn" data-modal-close>
+        <svg class="modal-close-icon" width="8" height="8">
+          <use href="./images/sprite.svg#icon-modal-btn-close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
